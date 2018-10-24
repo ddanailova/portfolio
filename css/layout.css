@@ -1,0 +1,69 @@
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.site-footer {
+    align-content: flex-end;
+}
+
+main {
+    padding: 0;
+    height: 85vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    background: rgb(248, 243, 240);
+}
+
+main.about,
+main.experience {
+    height: auto;
+    padding-bottom:2rem;
+}
+
+main>section {
+    width: 60%;
+}
+
+.fixed-page-titles {
+    position: fixed;
+    top: 50vh;
+    left: 10%;
+    width: 22%;
+}
+
+main.about .fixed-page-titles {
+    top: 40vh;
+    left: 7.5%;
+}
+
+@media screen and (max-width:1200px) {
+    .fixed-page-titles {
+        left: 8%;
+    }
+}

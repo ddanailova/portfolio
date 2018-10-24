@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,600,600i,700,700i');
+
+html {
+ font: 12px/1.7 'Oxygen', sans-serif;
+ color: #333;
+}
+
+
+@media screen and (min-width: 500px){
+	html { font-size:14px; }
+}
+
+@media screen and (min-width: 800px){
+	html { font-size:16px; }
+}
+
+@media screen and (min-width: 1300px){
+	html { font-size:18px; }
+}
+
+@media screen and (min-width: 1800px){
+	html { font-size:20x; }
+}
+
+
+.site-title,
+h1, h2, h3, h4, h5, h6 {
+	font: 1em/1.2 'Josefin Sans',sans-serif;
+	margin: 1em 0 0.5em 0;
+	padding: 0;
+}
+
+h1 { font-size: 3.5rem; font-weight: bold;}
+h2 { font-size: 2.2rem; }
+h3 { font-size: 1.9rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.4rem; }
+h6 { font-size: 1.2rem; }
+
+p {
+	margin: 0;
+	padding-bottom: 1.5rem;
+	letter-spacing: 0.05rem;
+}
+
+ol, ul, dl {
+	margin: 0 0 1.5rem 0;
+}
+
+ul, ol {
+	padding: 0;
+	margin-left: 1.5rem;
+}
+
+ul li, ol li {
+	list-style-position: inside;
+	letter-spacing: 0.03rem;
+}
+
+ul ul {
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+ul li { list-style-type: disc; }
+ul ul li { list-style-type: circle; }
+ul ul ul li { list-style-type: square; }
+
+img[class^="align-"] {
+	padding: 0.5rem;
+	background: #FFF;
+	border: 3px solid #222;
+	box-shadow: 0 0 5rem 0.1rem rgba(0,0,0,0.25);
+}
+
+.align-left {
+	float: left;
+	margin: 0 1.5rem 1rem 0;
+}
+
+.align-right {
+	float: right;
+	margin: 0 0 1rem 1.5rem;
+}
