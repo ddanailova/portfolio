@@ -5,7 +5,6 @@
 
 h1 {
     font-family: 'Josefin Sans', sans-serif;
-    /* font-size: 5rem; */
 }
 
 .site-header,
@@ -71,8 +70,8 @@ h1 {
     border-bottom: 0.2rem solid rgb(248, 243, 240);
 }
 
+
 .fixed-page-titles h1 {
-    display: block;
     margin: 0;
     padding: 0;
 }
@@ -83,9 +82,9 @@ h1 {
     margin: 1rem 0 2.5rem 0rem;
 }
 
-.fixed-page-titles span {
+/* .fixed-page-titles span {
     margin-left: 4.5rem;
-}
+} */
 
 @media screen and (max-width:1680px) {
 
@@ -103,7 +102,6 @@ h1 {
     }
 }
 
-
 @media screen and (max-width:1400px) {
     .fixed-page-titles h1 {
         font-size: 2.8rem;
@@ -115,6 +113,7 @@ h1 {
         font-size: 2.6rem;
     }
 }
+
 @media screen and (max-width:1200px) {
     .site-header .site-title {
         font-size: 1.8rem;
@@ -129,15 +128,15 @@ h1 {
 
 .media {
     overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
     position: relative;
 }
 
 .media:before {
     display: block;
     content: "";
-    padding-bottom: 100%;
-    background: rgba(223, 206, 199, 1);
-    background: radial-gradient(ellipse at center, rgba(223, 206, 199, 1) 0%, rgba(237, 226, 222, 1) 25%, rgba(247, 239, 236, 1) 49%, rgba(244, 236, 233, 1) 72%, rgba(236, 225, 219, 1) 100%);
+    padding-bottom: 56.25%;
 }
 
 .media img {
@@ -159,10 +158,11 @@ h1 {
     overflow: hidden;
 }
 
-.profile-pic:before {
+.profile-pic:after {
+    overflow: hidden;
     display: block;
     content: "";
-    padding-bottom: 100%;
+    padding-top: 100%;
 }
 
 .profile-pic img {
@@ -202,11 +202,42 @@ h3.position {
     margin-top: 0.5rem;
 }
 
-
 .notes:before {
     display: inline-block;
     content: "**";
     padding-right: 0.5rem;
+}
+
+/*For portfolio page*/
+.card {
+    width: 40%;
+    background: rgb(255, 255, 255);
+    overflow: hidden;
+    box-shadow: 0px 0px 2rem 0 rgba(0, 0, 0, 0.25);
+    margin: 2rem;
+}
+
+.card .media img {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.card .content {
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.card .content h4 {
+    font-weight: bold;
+    margin: 0 0 0.4rem 0;
+}
+
+.card .content p {
+    padding: 0;
 }
 
 /* For the contacts page*/
@@ -232,10 +263,8 @@ h3.position {
 }
 
 @media screen and (max-width:1680px) {
-
     .contacts li a,
     .contacts li i {
-
         font-size: 1.5rem;
     }
 }
@@ -280,7 +309,9 @@ h3.position {
         padding-top: 0;
     }
     .fixed-page-titles {
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
         position: absolute;
         top: 7rem;
         left: 50%;
@@ -288,8 +319,8 @@ h3.position {
         margin-bottom: 2rem;
         z-index: 5;
         width: auto;
+    
     }
-
 
     .job-content {
         padding: 0;
@@ -302,10 +333,9 @@ h3.position {
         flex: 1 0 100%;
     }
 
-    .media {
-        width:100%;
-        overflow: hidden;
-        position: relative;
+    .media img{
+        width:auto;
+       height: 100%
     }
     
     .fixed-page-titles.profile-pic {
@@ -340,5 +370,20 @@ h3.position {
         text-align: center;
     }
 
+    .videos {
+        justify-content: center;
+    }
+    .card{
+        width:80%;
+    }
+}
+
+@media screen and (min-width:320px) {
+    .fixed-page-titles h1 {
+        font-size: 2.3rem;
+    }
+    .fixed-page-titles h2 {
+        font-size: 1.3rem;
+    }
 }
 

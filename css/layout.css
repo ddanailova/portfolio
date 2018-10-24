@@ -41,7 +41,8 @@ main {
 }
 
 main.about,
-main.experience {
+main.experience,
+main.portfolio {
     height: auto;
     padding-bottom:2rem;
 }
@@ -66,4 +67,10 @@ main.about .fixed-page-titles {
     .fixed-page-titles {
         left: 8%;
     }
+}
+
+.videos {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
