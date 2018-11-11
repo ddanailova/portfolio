@@ -1,34 +1,38 @@
 ---
 layout: home
 title: Contacts
+body_class: contacts
 permalink: /contacts/
 ---
-<main class="contacts">
+<section class="left-side">
     <section class="fixed-page-titles">
         <h1>Contacts</h1>
     </section>
-    <section class="contacts">
+</section>
+<section class="right-side">
+    <section class="contact-info">
         <ul>
             <li>
-                <a href="#">
-                    <i class="fas fa-envelope"></i>
-                    Mail: {{ site.email }}</a>
+                <i class="fas fa-envelope"></i>
+                <!-- Mail: -->
+                <a href="#">{{ site.email }}</a>
             </li>
             <li>
-                <a href="#">
-                    <i class="fas fa-mobile-alt"></i>
-                    Phone: +359 876 440 403</a>
+                <i class="fas fa-mobile-alt"></i>
+                <!-- Phone: -->
+                <a href="#">+359 876 440 403</a>
             </li>
             <li>
-                <a href="https://www.linkedin.com/in/bruno-pinto-52017a153">
-                    <i class="fab fa-linkedin"></i>
-                    LinkedIn: www.linkedin.com/in/bruno-pinto-52017a153</a>
+                <i class="fab fa-linkedin"></i>
+                <!-- LinkedIn: -->
+                <a href="https://www.linkedin.com/in/bruno-pinto-52017a153">{{ site.title}}</a>
             </li>
             <li>
+                <i class="fab fa-skype"></i>
+                <!-- Skype:  -->
                 <a href="#">
-                    <i class="fab fa-skype"></i>
-                    Skype: bruno1pinto1</a>
+                    bruno1pinto1</a>
             </li>
         </ul>
     </section>
-</main>
+</section>
